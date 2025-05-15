@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon - Pan Cake</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./testStyles.css"> -->
+    <!-- Attaching JQuery -->
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Getting all images required for the project -->
+    <div id="mainSection">
+
+        <div id="imgDiv">
+            <img src="Images/background.avif" id="img" alt="Main Background Image">
+        </div>
+        <button id="startBtn" aria-label="Start Game Button">Start</button>
+        <section aria-label="Doraemon Images">
+            <img src="./Images/doraemonstanding.png" id="doraemonStanding" alt="Doraemon Standing Image">
+            <img src="./Images/doraemonwalking.png" id="doraemonWalking" alt="Doraemon Walking Image">
+            <img src="./Images/happyDoraemon.png" id="happyDora" alt="Doraemon with Doracakes Image">
+        </section>
+        <section aria-label="Interactive Objets">
+            <img src="./Images/bush.png" id="bush" class="disabled" tabindex="0" alt="Bush Image"
+                aria-label="Bush">
+            <img src="./Images/flowerpot.png" id="flowerPot" class="disabled" tabindex="0" alt="Flower Pot Image"
+                aria-label="Flower Pot">
+            <img src="./Images/doghouse.png" id="dogHouse" class="disabled" tabindex="0" alt="Dog House Image"
+                aria-label="Dog House">
+            <img src="./Images/mailbox.png" id="mailBox" class="disabled" tabindex="0" alt="Mail Box Image"
+                aria-label="Mail Box">
+            <img src="./Images/foodcart.png" id="foodCart" class="disabled" tabindex="0" alt="Food Cart Image"
+                aria-label="Food Cart">
+            <img src="./Images/rock.png" id="rock" class="disabled" tabindex="0" alt="Rock Image" aria-label="Rock">
+            <img src="./Images/grass.png" id="grass" class="disabled" tabindex="0" alt="Grass Image" aria-label="Grass">
+            <img src="./Images/bench.png" id="bench" class="disabled" tabindex="0" alt="Bench Image" aria-label="Bench">
+            <img src="./Images/cat.png" id="cat" class="disabled" tabindex="0" alt="Cat Image" aria-label="Cat">
+        </section>
+        <section aria-label="Dora Cakes">
+            <img src="./Images/doracake.png" id="doraCake1" alt="Dora Cake Image">
+            <img src="./Images/doracake.png" id="doraCake2" alt="Dora Cake Image">
+            <img src="./Images/doracake.png" id="doraCake3" alt="Dora Cake Image">
+            <img src="./Images/doracake.png" id="doraCake4" alt="Dora Cake Image">
+            <img src="./Images/doracake.png" id="doraCake5" alt="Dora Cake Image">
+        </section>
+        <span id="message"></span>
+        <p id="thanksMessage">Mission complete! You’ve made Doraemon’s day 100x sweeter 🍰💙</p>
+        <!-- Audio Background -->
+        <audio id="backgroundMusic" loop>
+            <source src="./audio/opening_doraemon.mp3" type="audio/mpeg">
+        </audio>
+        <!-- Object click audio -->
+        <audio id="clickMusic">
+            <source src="./audio/onclicksound.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Javascript file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

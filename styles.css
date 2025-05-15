@@ -1,0 +1,315 @@
+/* Universal styles for setting margin, padding 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Html and body styles */
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+    overscroll-behavior: none;
+}
+
+/* main section styles */
+#mainSection {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* background image div styles */
+#imgDiv {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+/* background image styles */
+#img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Standing Doraemon Image styles */
+#doraemonStanding {
+    position: absolute;
+    width: 10.813vw;
+    top: 48%;
+    display: block;
+}
+
+/* Walking Doraemon Image styles */
+#doraemonWalking {
+    position: absolute;
+    width: 10.813vw;
+    top: 45%;
+    display: none;
+}
+
+/* Happy Doraemon Image styles */
+#happyDora {
+    position: absolute;
+    width: 16.021vw;
+    top: 45%;
+    display: none;
+    animation: happyDance 0.5s infinite;
+}
+
+/* Bush Image styles */
+#bush {
+    position: absolute;
+    width: 10.813vw;
+    bottom: 37%;
+    right: 60vw;
+    z-index: 1;
+}
+
+/* Flower Pot Image styles */
+#flowerPot {
+    position: absolute;
+    width: 7.208vw;
+    bottom: 42%;
+    right: 40vw;
+}
+
+/* Dog House Image styles */
+#dogHouse {
+    position: absolute;
+    width: 7.208vw;
+    bottom: 41%;
+    right: 10vw;
+    z-index: 1;
+}
+
+/* Mail Box Image styles */
+#mailBox {
+    position: absolute;
+    width: 9.813vw;
+    bottom: 45%;
+    right: 20vw;
+    z-index: 1;
+}
+
+/* Food Cart Image styles */
+#foodCart {
+    position: absolute;
+    width: 10.813vw;
+    bottom:2%;
+    right: 25vw;
+}
+
+/* Rock Image styles */
+#rock {
+    position: absolute;
+    width: 10.813vw;
+    bottom: 1%;
+    right: 57vw;
+    z-index: 1;
+}
+
+/* Grass Image styles */
+#grass {
+    position: absolute;
+    width: 10.813vw;
+    bottom: 3%;
+    right: 43vw;
+}
+
+/* Bench Image styles */
+#bench {
+    position: absolute;
+    width: 13.938vw;
+    bottom: 1%;
+    right: 3vw;
+    overflow: hidden;
+}
+
+/* Cat Image styles */
+#cat {
+    position: absolute;
+    width: 7.688vw;
+    bottom: 4%;
+    right: 5vw;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Dora Cake Image styles */
+#doraCake1 {
+    position: absolute;
+    width: 4.646vw;
+    bottom: 42%;
+    right: 65vw;
+}
+
+#doraCake2 {
+    position: absolute;
+    width: 2.604vw;
+    bottom: 50%;
+    right: 23.5vw;
+}
+
+#doraCake3 {
+    position: absolute;
+    width: 4.646vw;
+    bottom: 7%;
+    right: 60vw;
+}
+
+#doraCake4 {
+    position: absolute;
+    width: 3.646vw;
+    bottom: 7.4%;
+    right: 8vw;
+}
+
+#doraCake5 {
+    position: absolute;
+    width: 3.604vw;
+    bottom: 45%;
+    right: 12vw;
+}
+
+/* Message Styles */
+#message {
+    width: 5.208vw;
+    background-color: white;
+    color: black;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Objects Hover styles */
+#bush:hover,
+#flowerPot:hover,
+#dogHouse:hover,
+#mailBox:hover,
+#foodCart:hover,
+#rock:hover,
+#grass:hover,
+#bench:hover,
+#cat:hover {
+    animation: objectShake 0.5s infinite;
+}
+
+/* Button styles */
+#startBtn {
+    padding: 15px;
+    background-color: rgb(201, 77, 119);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    font-size: 20px;
+    animation: btnAnimate 1s infinite;
+}
+
+#startBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Thanks Message styles */
+#thanksMessage {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    font-size: 1.5em;
+    background-color: rgb(201, 77, 119);
+    color: white;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px #999;
+    display: none;
+}
+
+.disabled,
+.clicked {
+    pointer-events: none;
+}
+
+/* Animations */
+@keyframes objectShake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes happyDance {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDoraemon {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 1220px;
+    }
+}
+
+@keyframes walkDoraemon {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes btnAnimate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.09);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
